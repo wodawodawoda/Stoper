@@ -1,0 +1,57 @@
+*
+  box-sizing: border-box
+
+.stoper
+  background: cornsilk
+  margin: 0 auto
+  padding: 20px 0
+  max-width: 1000px
+  display: grid
+  grid-template-columns: repeat(10, 10%)
+  grid-template-rows: repeat(10, 10%)
+
+
+.controls
+  grid-area: 1/1/2/11
+  margin: 0 auto
+  width: 100%
+  display: flex
+  border: 5px solid black
+  border-radius: 10px 10px 0 0
+.controls__btn
+  flex: 1
+  padding: 10px
+  font-size: 1.5em
+  border: 5px solid black
+  cursor: pointer
+.controls__btn--start
+  background: green
+.controls__btn--stop
+  background: darkred
+.controls__btn--record
+  background: darkorange
+
+.counter
+  grid-area: 2/1/3/11
+  margin: 0 auto
+  padding: 20px 0
+  background: cornflowerblue
+  width: 100%
+  display: flex
+  font-size: 2em
+.counter__time
+  margin: auto
+
+.records
+  grid-area: 3/1/4/11
+
+.records__record
+  background: aliceblue
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  border: 3px solid black
+  padding: 2px
+  margin: 3px 2px
+  width: 50px
+  height: 40px
