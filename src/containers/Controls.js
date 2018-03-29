@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class Controls extends React.Component {
     render() {
@@ -16,4 +17,10 @@ class Controls extends React.Component {
     }
 }
 
+Controls.propTypes = {
+  start: PropTypes.func,
+  stop: PropTypes.func,
+  reset: PropTypes.func,
+  record: PropTypes.func
+}
 export default Controls;

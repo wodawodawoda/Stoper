@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 
 class Records extends React.Component {
     item() {
@@ -13,6 +15,10 @@ class Records extends React.Component {
             </ul>
         );
     }
+}
+
+Records.propTypes = {
+  record: PropTypes.array
 }
 
 export default Records

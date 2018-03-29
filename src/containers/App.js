@@ -45,7 +45,7 @@ class App extends React.Component {
         miliseconds = time % 100;
       return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}:${(miliseconds < 10 ? '0' : '')}${miliseconds}`;
     }
-  // Run
+    // Run
     interval() {
         if(!this.state.run) {this.int = setInterval(this.updateTime, 10)}; // runs when new props/state is recived but not yet upadted
     }
